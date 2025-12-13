@@ -96,4 +96,8 @@ public class Doudizhu {
             System.out.println();
         }
     }
+
+    public void place(int player, int[] cards){
+        
+    }
 }
