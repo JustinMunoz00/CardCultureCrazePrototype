@@ -12,8 +12,8 @@ public class Doudizhu {
             playerHands.add(new ArrayList<Integer>());
         }
         newDeck();
-        System.out.print("Hello players! DouDizhu essentially a chinese version of poker. It is a 3 player game where 1 player is the landowner who the other 2 will compete against. \nThe landowner starts out with 3 extra cards that they have to reveal to the other 2 players. The goal of all players is to use all their cards. If either the land ownner ");
-        System.out.println("or 1 of the other 2 players reach this goal the game ends. Only 1 of the 2 players are required to win for both to win. The landowner always starts first and can choose how they want to play (single, double, triple, straight). \nAll other players have to place the same type as the land owner (if the landowner plays doubles they have to play doubles). If you are the last person to put down a card then you restart the pile and can play whatever you would like. ");
+        System.out.print("Hello players! DouDizhu essentially a chinese version of poker. It is a 3 player game where 1 player is the landowner who the other 2 will compete against. \nThe landowner starts out with 3 extra cards that they have to reveal to the other 2 players. The goal of all players is to use all their cards. \nIf either the land ownner ");
+        System.out.print("or 1 of the other 2 players reach this goal the game ends. Only 1 of the 2 players are required to win for both to win. \nThe landowner always starts first and can choose how they want to play (single, double, triple, straight). \nAll other players have to place the same type as the land owner (if the landowner plays doubles they have to play doubles). \nIf you are the last person to put down a card then you restart the pile and can play whatever you would like. \n\n");
     }
 
     private void newDeck(){
@@ -97,7 +97,9 @@ public class Doudizhu {
         }
     }
 
-    public void place(int player, int[] cards){
-        
+    public void place(int player, int card){
+        System.out.println("Player " + player + " placed a " + cardValue.get(card - 2));
     }
+
+
 }
